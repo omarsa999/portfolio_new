@@ -291,13 +291,13 @@ Go to `/src/index.html` and put your information, there are 5 sections:
 <footer class="footer navbar-static-bottom">
   ...
   <div class="social-links">
-    <a href="#!" target="_blank">
-      <i class="fa fa-twitter fa-inverse"></i>
+    <a href="https://www.facebook.com/omar.saba7" target="_blank">
+      <i class="fa fa-facebook fa-inverse"></i>
     </a>
-    <a href="#!" target="_blank">
+    <a href="https://www.linkedin.com/in/omar-sabbah-af/" target="_blank">
       <i class="fa fa-linkedin fa-inverse"></i>
     </a>
-    <a href="#!" target="_blank">
+    <a href="https://github.com/omarsa999" target="_blank">
       <i class="fa fa-github fa-inverse"></i>
     </a>
   </div>
