@@ -1,0 +1,819 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+* ul {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #edeef0;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* mobile veiw css */
+.fw-700 {
+  font-weight: 700;
+}
+
+.p-30 {
+  padding: 30px;
+}
+.container > * {
+  width: 100%;
+}
+.s1,
+.s3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+}
+
+.logo {
+  height: 60px;
+}
+.col {
+  grid-column: 1 / 5;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.brand {
+  background: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a22c7e27a32_octo1.png"),
+    #2a3036;
+  background-position: right;
+  background-size: cover;
+  padding-block: 120px;
+}
+.into-txt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.into-txt p {
+  line-height: 18px;
+}
+.into-txt h1 {
+  font-size: 2.125rem;
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.article-wrapper {
+  background-image: url("https://miro.medium.com/max/1400/1*zCDpU02aha88Iw-jvGkp2A.jpeg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 192px;
+  background-position: left;
+  background-size: cover;
+}
+.article-content-wrapper {
+  width: 100%;
+}
+.article-content-wrapper a {
+  font-size: small;
+  font-weight: 500;
+  padding: 3px 0.5rem;
+  border-radius: 5px;
+}
+.work-frames {
+  background-color: #40c2a6;
+  height: 95vh;
+}
+.carousel-inner,
+.carousel-item {
+  height: 100% !important;
+}
+.slider-img-holder {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.slide-1 {
+  display: flex !important;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 37.9px;
+}
+.slide-2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-1txt a:first-child,
+.pandora-text-holder a,
+.voyce-txt a,
+.gwn-txt-holder a {
+  font-size: small;
+  font-weight: 500;
+  padding: 3px 0.5rem;
+  border-radius: 5px;
+}
+.slide-3 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca076abded82a_bokas-desktop-p-800.png");
+  background-clip: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-1txt a:last-child {
+  font-size: small;
+  font-weight: 500;
+  padding: 3px 0.5rem;
+  border-radius: 50px;
+  background-color: #8bdac9;
+}
+.testimonials-wrapper {
+  height: 65vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.testimonial-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: 50px;
+}
+.testimonial-slide p {
+  font-size: 14px;
+}
+.txt {
+  height: 100vh;
+}
+.slide-button {
+  height: 40px !important;
+  position: absolute !important;
+  width: 40px !important;
+  color: #eb5e28;
+  font-size: 18px;
+  opacity: 1 !important;
+  top: 27px;
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  color: #2a3036 !important;
+}
+.slide-button1 {
+  left: 230px !important;
+}
+.slide-button2 {
+  right: 20px !important;
+}
+.contact-card span {
+  padding-block: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.pandora-card {
+  height: 95vh;
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca0286aded859_pandora-mockup3.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.industry-card-txt h1 {
+  font-size: 35px !important;
+}
+.webflow-card-img {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca0fad9ded8ac_55777070_2378641565513727_8182246366088518238_n.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.webflow-card-img img {
+  opacity: 0;
+}
+
+.s2 {
+  height: 95vh;
+  margin: 30px 0;
+}
+
+.voyce-card {
+  background: #d1ccc5;
+}
+
+.voyce-card-slide {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.voyce-card-slide0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.voyce-card-slide1 {
+  background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a2ff7e27a51_voyce-2b%402x.png");
+}
+.voyce-card-slide2 {
+  background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a00c2e27a40_voyce-4%402x.jpg");
+  background-size: cover;
+}
+.wishlist-txt > .carousel-control-next-icon {
+  filter: invert(1) grayscale(100) !important;
+}
+.virgin-card {
+  height: 95vh;
+  background-color: #575757;
+}
+.virgin-card-slide0 {
+  background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a6b7ce27a2a_Ring.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.virgin-card-slide1 {
+  background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a5b5fe27a34_VX_SEATBACK2%402x.jpg");
+  background-size: cover;
+}
+.virgin-card-slide2 {
+  background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a1873e27a4e_virgin-5%402x.png");
+}
+.gwn-card {
+  background: #3f2963;
+}
+.gwn-img {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca01e8fded834_Group%25402x-p-800.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 50px;
+  height: 300px;
+}
+.gwn-img img {
+  opacity: 0;
+}
+.gwn-card-slide2 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca04cb7ded848_gwn2-p-800.jpeg");
+}
+.gwn-card-slide3 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca0cb0aded84d_gwn4-p-1080.jpeg");
+  background-size: cover;
+}
+.truebeauty-card-txt > a:last-child {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 50px;
+}
+.truebeauty-card {
+  background: #ff8089;
+}
+.truebeauty-card-img {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca05b82ded8bf_Group%25203%2520Copy%25402x-p-500.png");
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+}
+.truebeauty-card-img img {
+  opacity: 1;
+  height: 90%;
+}
+.truebeauty-card-slide2 {
+  background: none;
+}
+.truebeauty-card-slide3 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca06fadded88a_truebeauty-2-p-800.png");
+}
+.ellucian-card {
+  background-color: #d2d4da;
+}
+.ellucian-card-img {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca080abded8c7_bubbles%402x.png");
+  width: 250px;
+  background-size: contain;
+  margin: 0 auto;
+  height: 300px;
+  bottom: 60px;
+  align-items: flex-end;
+}
+.ellucian-card-img img {
+  height: 220px;
+}
+.ellucian-card-slide {
+  background: none;
+}
+.article-card {
+  background-image: linear-gradient(
+      137deg,
+      rgba(0, 0, 0, 0) 19%,
+      rgba(0, 0, 0, 0.3) 40%,
+      rgba(0, 0, 0, 0.3) 55%
+    ),
+    url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca04986ded8b6_rodion-kutsaev-pVoEPpLw818-unsplash%20(1).jpg");
+}
+.apollo-card-img {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca08124ded860_apollo-p-500.png");
+}
+.apollo-card {
+  background: #212121;
+}
+.apollo-card-s2 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca06c54ded869_apollo-1%25402x-p-500.png");
+}
+.apollo-card-s3 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca0599cded864_apollo-2%25402x-p-500.png");
+}
+.s4-row {
+  gap: 30px;
+}
+.mariner-card-img {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca04c5bded873_mariner-1.png");
+  height: 60%;
+  margin: 0 auto;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mariner-card {
+  background: #253c78;
+}
+.mariner-card-s2 {
+  background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca078bbded87b_mariner-3-p-800.png");
+}
+.mariner-card-s3 {
+  background: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca0b0baded880_mariner-2-p-800.png");
+}
+.footer-card-icon {
+  font-size: ;
+}
+footer p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* mobile veiw  css end */
+
+/* tablet veiw  css */
+@media (min-width: 760px) {
+  .s1 {
+    height: 270rem;
+    grid-template-columns: 2fr 0.5fr 0.5fr 2fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .brand {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    align-items: flex-start !important;
+    padding-top: 50px;
+  }
+  .into-txt {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+  }
+  .contact-card {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+  }
+  .article-wrapper {
+    align-items: flex-start;
+  }
+  .article-content-wrapper {
+    width: 60%;
+  }
+  .work-frames {
+    height: auto;
+    grid-row: 4 / 6;
+  }
+  .testimonials-wrapper {
+    height: auto;
+    grid-row: 6 / 7;
+  }
+  .slide-button1 {
+    left: 620px !important;
+  }
+
+  .slider-img-holder {
+    height: 435px !important;
+  }
+  .slide-1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .pandora-card {
+    height: auto;
+    grid-row: 7 / 9;
+  }
+  .profile-card {
+    grid-row: 9 / 13;
+  }
+  .profile-img {
+    height: 60%;
+  }
+  .profile-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .industry-card {
+    grid-column: 1 / 3;
+    grid-row: 13/ 14;
+  }
+  .webflow-card {
+    grid-column: 3 / 5;
+    grid-row: 13/ 14;
+  }
+  .s2 {
+    height: 93.5vh;
+    margin: 20px 0;
+  }
+  .voyce-card-slide img {
+    height: 70%;
+    width: 70%;
+  }
+
+  .gwn-img {
+    right: -60px;
+    height: 400px;
+  }
+  .apollo-card-img {
+    right: 0;
+  }
+  .wishlist-card {
+    grid-column: 1 / 5;
+    grid-row: 1;
+  }
+  .truebeauty-card-img {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    bottom: -80px;
+    background-size: contain;
+  }
+  .truebeauty-card-img img{
+    height: 75%;
+  }
+  .truebeauty-card-slide2 > img {
+    height: 50%;
+  }
+
+  .mariner-card-img {
+    width: 70%;
+    height: 65%;
+  }
+  footer span {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .s5 {
+    height: 300px;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* tablet veiw  css end */
+/* laptop veiw css */
+@media (min-width: 63.75rem) {
+  .s1 {
+    height: 2600px;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.3fr 1.3fr;
+  }
+  .s3 {
+    height: 1830px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+  }
+  .s4 {
+    height: 810px;
+  }
+  .brand {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+  .article-wrapper {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+  .article-content-wrapper {
+    width: 85%;
+    margin-bottom: 50px;
+  }
+  .into-txt {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+  .contact-card {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  /* .truebeauty-card-img {
+    height: auto;
+    width: auto;
+  } */
+  .slide-1 {
+    gap: 35px;
+  }
+  .slider-img-holder {
+    height: 450px !important;
+  }
+  .work-frames {
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+  }
+  .testimonials-wrapper {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+  }
+  .slide-button1 {
+    left: 400px !important;
+  }
+  .testimonials-wrapper {
+    gap: 30px;
+  }
+  .pandora-card {
+    grid-row: 4 / 6;
+    background-image: url("https://assets.website-files.com/5c41fccc0ea8d56c248cfd90/5f7db3c29b4ca0bf27ded8af_pandora-mockup.jpg");
+    background-position: right center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .pandora-text-holder {
+    width: 30%;
+  }
+  .profile-card {
+    grid-row: 6 / 8;
+    grid-column: 1 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-img,
+  .profile-txt {
+    height: 100%;
+    width: 50%;
+    font-size: 14px;
+    background: #cbcdd0;
+  }
+  .industry-card {
+    grid-column: 4 / 5;
+    grid-row: 6/ 7;
+  }
+  .webflow-card {
+    grid-column: 4 / 5;
+    grid-row: 7/ 8;
+  }
+  .s2 {
+    height: 95.5vh;
+  }
+  .voyce-card-slide0 {
+    flex-direction: row;
+  }
+  .voyce-card-slide img {
+    height: 100%;
+    width: 60%;
+  }
+  .voyce-txt {
+    width: 35% !important;
+  }
+  .s3 {
+    height: 2200px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1.1fr 2fr 2fr 2fr 1.1fr;
+  }
+  .wishlist-card {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: auto;
+  }
+  .virgin-card {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    height: auto;
+  }
+  .gwn-card {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    height: auto;
+  }
+  .truebeauty-card {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    height: auto;
+  }
+  .ellucian-card {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+    height: auto;
+  }
+  .article-card {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    height: auto;
+  }
+  .virgin-card-slide0 {
+    background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a6b7ce27a2a_Ring.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-position: center;
+  }
+  .virgin-card-txt {
+    width: 100%;
+  }
+
+  .truebeauty-card-img {
+    width: 100%;
+    margin: 0 auto;
+    right: auto;
+  }
+  .truebeauty-card-slide2 {
+    width: 100%;
+  }
+  .truebeauty-card-slide2 img {
+    height: 50%;
+    width: 100%;
+  }
+  .ellucian-card-slide2 img {
+    height: 100%;
+  }
+  .apollo-card {
+    height: 100%;
+  }
+  .mariner-card-img {
+    background-size: cover;
+    width: 82%;
+  }
+}
+/* laptop veiw css end */
+
+/* laptop l veiw css  */
+@media (min-width: 1281px) {
+  .s1 {
+    height: 2600px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .s3 {
+    height: 2200px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 1.1fr 2fr 2fr 2fr 1.1fr;
+  }
+  .s4 {
+    height: 1010px;
+  }
+  .slide-1 {
+    gap: 0px;
+  }
+  .slider-img-holder {
+    height: 480px !important;
+  }
+
+  .slide-button1 {
+    left: 550px !important;
+  }
+  .profile-txt {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  .s2 {
+    height: 116vh;
+  }
+  .truebeauty-card-img {
+    height: 60%;
+  }
+  .gwn-img {
+    height: 60%;
+  }
+  .mariner-card-img {
+    width: 80%;
+    background-size: contain;
+  }
+}
+/* laptop l veiw css end */
+.future {
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+}
+.future__text-area {
+  top: 30%;
+}
+@media (max-width: 768px) {
+  .future {
+    background-color: #434a55;
+  }
+  .future__video-area video {
+    visibility: hidden;
+  }
+  .future__video-area {
+    background-image: url("https://assets.website-files.com/5f6906dba6c72aaec6e27a06/5f6906dba6c72a54b4e27a80_marriott-homepage.png");
+    background-size: cover;
+    padding: 10px 0 4rem 4rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+  .future__text-area {
+    position: relative !important;
+  }
+}
